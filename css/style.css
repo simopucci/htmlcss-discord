@@ -116,10 +116,20 @@
 
 /* MAIN */
 
-.main-content {
-  height: 600px;
-  display: flex;
-  align-items: center;
+section:nth-of-type(even)::before,
+section:nth-of-type(even)::after {
+  content: "";
+  background-image: url(../img/wave.svg);
+  height: 100px;
+  display: block;
+}
+
+section:nth-of-type(even)::before {
+  transform: scale(-1, -1);
+}
+
+section:last-of-type::after {
+  display: none;
 }
 
 .white-section {
@@ -136,6 +146,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding: 50px 0;
 } 
 
 .left-content {
@@ -158,11 +169,6 @@
   line-height: 25px;
   font-weight: bold;
   font-size: 1.2rem;
-}
-
-.bottom-main {
-  height: 1000px;
-  padding-top: 100px;
 }
 
 .bottom-main-content {
@@ -196,6 +202,10 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
+}
+
+#adventure {
+  padding-bottom: 50px;
 }
 
 .blue-button {
