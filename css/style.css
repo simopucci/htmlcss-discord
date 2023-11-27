@@ -11,6 +11,12 @@
   --dashedblack: 2px dashed black
 }
 
+button:hover {
+  cursor: pointer;
+  box-shadow: 3px 5px 15px black;
+  transition-duration: 0.3s;
+}
+
 
 /* HEADER */
 
